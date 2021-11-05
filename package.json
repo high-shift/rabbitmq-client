@@ -1,0 +1,29 @@
+{
+  "name": "rabbitmq-client",
+  "version": "2.0.1",
+  "description": "Wrapping around the amqplib",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "dev": "nodemon dist/index.js -w dist/*",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "RabbitMQ"
+  ],
+  "author": "Vinicius Miguel",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.3",
+    "verror": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.5.13",
+    "@types/verror": "^1.10.3",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "ava": "^2.2.0",
+    "eslint": "^6.0.1",
+    "typescript": "^3.5.3"
+  }
+}
