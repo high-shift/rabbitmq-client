@@ -6,8 +6,8 @@ import MQProducer from './producer';
 import MQConsumer from './consumer';
 
 export interface IAMQPResources {
-    producer: boolean;
-    consumer: boolean;
+    producer?: boolean;
+    consumer?: boolean;
 }
 
 export default class RabbitMQClient extends EventEmitter {
